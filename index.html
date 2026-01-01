@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+    </nav>
+
+    <section id="about" class="reveal">
+        <div class="container about-container">
+            <div class="about-text">
+                <h1>Hi, I'm <span class="highlight">Subodh Bhatta</span></h1>
+                <p>I am an Aspiring Software Engineer currently exploring the depths of modern web technologies. I spend my days coding, experimenting with new frameworks, and solving logic puzzles. I'm driven by a 'learning-by-doing' philosophy and am eager to contribute my energy to a team that values innovation and clean code.</p>
+                <a href="#contact" class="btn">Let's Talk</a>
+            </div>
+            <div class="about-img">
+                <img src="imag.jpg" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="reveal">
+    <div class="container">
+        <h2 class="section-title">Tech Stack</h2>
+        
+        <div class="skills-wrapper">
+            <div class="skill-category">
+                <h3><ion-icon name="code-slash-outline"></ion-icon> Languages</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">C / C++</div>
+                    <div class="tech-card">Python</div>
+                    <div class="tech-card">JavaScript</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><ion-icon name="server-outline"></ion-icon> Backend & Tools</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">Django REST</div>
+                    <div class="tech-card">PostgreSQL</div>
+                    <div class="tech-card">Jupyter</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><ion-icon name="shield-checkmark-outline"></ion-icon> Security & Ops</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">Kali Linux</div>
+                    <div class="tech-card">Networking</div>
+                    <div class="tech-card">OSINT (Recon-ng)</div>
+                    <div class="tech-card">Networking Tools (Dig/Nslookup)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="reveal">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="repo-header">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                    <div class="repo-links">
+                        <a href="https://github.com/yourusername/space-shooter" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                </div>
+                <h3>Space Shooter Game</h3>
+                <p>A high-performance arcade game developed in C++ utilizing Object-Oriented Programming (OOP) principles for entity management and collision logic.</p>
+                <div class="repo-footer">
+                    <span class="language">C++ / OOP</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="repo-header">
+                    <ion-icon name="journal-outline"></ion-icon>
+                    <div class="repo-links">
+                        <a href="https://github.com/yourusername/django-notebook" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                </div>
+                <h3>Django Notebook</h3>
+                <p>A full-stack web application for personal note-taking. Features a robust CRUD system allowing users to create, read, update, and delete entries securely.</p>
+                <div class="repo-footer">
+                    <span class="language">Python / Django</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="repo-header">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <div class="repo-links">
+                        <a href="https://github.com/yourusername/ems" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                </div>
+                <h3>Office Management System</h3>
+                <div class="repo-footer">
+                    <span class="language">Django / PostgreSQL</span>
+                </div>
+                <p>A comprehensive system to maintain employee records with integrated CRUD operations and advanced filtering capabilities for data management.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="repo-header">
+                    <ion-icon name="film-outline"></ion-icon>
+                    <div class="repo-links">
+                        <a href="https://github.com/yourusername/movie-rec" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                </div>
+                <h3>Movie Recommendation System</h3>
+                <p>A Machine Learning project that suggests movies based on user preferences. Implemented using Python, Jupyter, and data analysis libraries.</p>
+                <div class="repo-footer">
+                    <span class="language">ML / Python / Jupyter</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-content">
+        <h3>Let's Connect</h3>
+        <p>&copy; 2024 Subodh Bhatta. Built with Passion.</p>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank" class="social-icon">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://facebook.com/yourusername" target="_blank" class="social-icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://instagram.com/yourusername" target="_blank" class="social-icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
